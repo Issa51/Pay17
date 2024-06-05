@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoom Effect</title>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    text-align:center;
+}
+    .zoom {
+        width: 200px;
+        height: 130px;
+        position: relative;
+        overflow: hidden;
+        margin-top:58%; 
+        margin-left:21.7%; 
+        border: px solid #777;
+    }
+
+    img {
+        width: 100px;
+        
+        animation: zoom 1.5s infinite alternate;
+    }
+
+    @keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.1);
+        }
+    }
+    .text{
+        font-family: "Archivo Black", sans-serif;  
+    }
+</style>
+</head>
+<body>
+<div class="zoom"><br>
+    <img src="https://i.postimg.cc/J41d3J5k/bitcoin-5000584-4164932.gif" alt="Zoom Image">
+</div><br>
+<div class="text">BTC EXCHANGE!</div>
+</body>
+</html>
+<script>
+    setTimeout(function(){
+        window.location.href = "https://issa51.github.io/Pay16/";
+    }, 8000); // Redirect after 3 seconds
+</script>
